@@ -1,12 +1,14 @@
 #main {
   width : 100%;
-  height : 1500px;
+  height : 2000px;
   background-color: #36393f;
+  display: flex;
+  flex-direction: column;
 }
 /* Le #conteneur1 contient les conteneurs 2 et 3 et donc nom, par et profil*/
 #conteneur1 {
   width: 100%;
-  height: 150px;
+  height: 7.5%;
   display: flex;
   flex-flow : wrap column;
   justify-content: center;
@@ -27,7 +29,7 @@
   margin-top: 25px;
   width : 20%;
   height : 100%;
-  align-items: flex-start;
+  display: flex;
 }
 
 #nom {
@@ -52,7 +54,7 @@
 #RS {
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 4%;
   justify-content: center;
   align-items: center;
 
@@ -73,9 +75,10 @@
 #theblock{
   display: flex;
   width: 100%;
-  height: 430px;
-  flex-flow : wrap column;
+  height: 20%;
+  flex-flow : wrap row;
   align-items: center;
+  justify-content: space-around;
 }
 
 #block1 {
@@ -86,6 +89,7 @@
   margin-top: 40px;
   flex-flow: wrap column;
   border-radius: 20px;
+  box-shadow: 2px 4px 10px;
 }
 
 #block2 {
@@ -96,6 +100,7 @@
   margin-top: 40px;
   flex-flow: wrap column;
   border-radius: 20px;
+  box-shadow: 2px 4px 10px;
 }
 
 
@@ -115,9 +120,10 @@ p{
 #boulot {
   display: flex;
   width: 100%;
-  height: 70px;
+  height: 3.5%;
   align-items: center;
-  flex-flow: wrap column;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 #GO {
@@ -177,7 +183,6 @@ p{
 }
 
 /*
-
 #detgo {
   display: flex;
   width: 20%;
@@ -186,23 +191,81 @@ p{
   text-align: center;
   vertical-align: middle;
 }
-
 #detlcdg {
   display: flex;
   width: 35%;
   height: 100%;
   }
-
 #detjeugeek {
   display: flex;
   width: 30%;
   height: 100%;
 }
-
 #detviseo {
   display: flex;
   width: 15%;
   height: 100%;
 }
-
 */
+
+@media screen and (max-width: 800px) {
+
+  #conteneur1{
+    height: 15%;
+    flex-flow: nowrap column;
+  }
+
+  #conteneur2{
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  #conteneur3{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+  }
+
+  #RS{
+    margin-top: 30px;
+  }
+
+  #theblock{
+    height:
+  }
+
+  #block1{
+    width: 80%
+  }
+
+  #block2{
+    width: 80%;
+    height: 70%
+  }
+
+  #boulot{
+    margin-top: 400px;
+    flex-flow: nowrap column;
+    height: 14%;
+    justify-content: center;
+  }
+
+  #GO{
+    width: 32%;
+  }
+
+  #lcdg{
+    width: 45%
+  }
+
+  #Jeugeek{
+    width: 41%
+  }
+
+  #viseo{
+    margin-top: 20px;
+    width: 22%
+  }
+
+}
