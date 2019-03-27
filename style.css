@@ -1,0 +1,288 @@
+#main {
+  width : 100%;
+  height : 2000px;
+  background-color: #d1af76;
+  display: flex;
+  flex-direction: column;
+}
+/* Le #conteneur1 contient les conteneurs 2 et 3 et donc nom, par et profil*/
+#conteneur1 {
+  width: 100%;
+  height: 7.5%;
+  display: flex;
+  flex-flow : wrap column;
+  justify-content: center;
+  align-items: center;
+}
+
+img:hover
+{
+  /* Rotation des image au survol */
+  /* -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg); */
+
+  /* Zoom de 10% de l'image au survol */
+  -webkit-transform:scale(1.10); /* Safari et Chrome */
+  -moz-transform:scale(1.10); /* Firefox */
+  -ms-transform:scale(1.10); /* Internet Explorer 9 */
+  -o-transform:scale(1.10); /* Opera */
+  transform:scale(1.10);
+}
+
+#conteneur2 {
+  margin-top: 25px;
+  display : flex;
+  width: 80%;
+  height : 100%;
+  align-items: center;
+  justify-content: center;
+  flex-flow : column;
+}
+
+#conteneur3 {
+  margin-top: 25px;
+  width : 20%;
+  height : 100%;
+  display: flex;
+}
+
+#nom {
+  display: flex;
+  margin: 2px;
+  color: black;
+}
+
+#par {
+  display: flex;
+  margin : 2px;
+  color: #303030;
+}
+/* Le margin a permis de resserer les deux textes */
+#profil {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+}
+
+#RS {
+  display: flex;
+  width: 100%;
+  height: 4%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#github {
+  display: flex;
+}
+
+#linkedin {
+  display: flex;
+}
+
+#facebook{
+  display: flex;
+}
+
+#theblock{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  flex-flow : wrap row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#block1 {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  background-color: #b49041;
+  margin-top: 40px;
+  flex-flow: wrap column;
+  border-radius: 20px;
+  box-shadow: 4px 8px 20px;
+}
+
+#block2 {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  background-color: #b49041;
+  margin-top: 40px;
+  flex-flow: wrap column;
+  border-radius: 20px;
+  box-shadow: 4px 8px 20px;
+}
+
+
+h3{
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+  font-family: Courier;
+}
+
+ul{
+  color: black;
+  list-style-type: square;
+}
+
+
+#boulot {
+  display: flex;
+  width: 100%;
+  height: 3.5%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#GO {
+  display: flex;
+  width: 20%;
+  height: 100%;
+}
+
+#lcdg {
+  display: flex;
+  width: 35%;
+  height: 100%;
+}
+
+#Jeugeek{
+  display: flex;
+  height: 100%;
+  width: 30%;
+}
+
+#viseo {
+  display: flex;
+  height: 100%;
+  width: 15%;
+}
+
+#GOimg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#lcdgimg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#Jeugeekimg{
+  display: flex;
+  width: 100%;
+  height: 100%
+}
+
+#viseoimg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#boutons {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+/*
+#detgo {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+#detlcdg {
+  display: flex;
+  width: 35%;
+  height: 100%;
+  }
+#detjeugeek {
+  display: flex;
+  width: 30%;
+  height: 100%;
+}
+#detviseo {
+  display: flex;
+  width: 15%;
+  height: 100%;
+}
+*/
+
+@media screen and (max-width: 800px) {
+
+  #conteneur1{
+    height: 15%;
+    flex-flow: nowrap column;
+  }
+
+  #conteneur2{
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  #conteneur3{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+  }
+
+  #RS{
+    margin-top: 30px;
+  }
+
+  #theblock{
+    height:
+  }
+
+  #block1{
+    width: 80%
+  }
+
+  #block2{
+    width: 80%;
+    height: 70%
+  }
+
+  #boulot{
+    margin-top: 400px;
+    flex-flow: nowrap column;
+    height: 14%;
+    justify-content: center;
+  }
+
+  #GO{
+    width: 32%;
+  }
+
+  #lcdg{
+    width: 45%
+  }
+
+  #Jeugeek{
+    width: 41%
+  }
+
+  #viseo{
+    margin-top: 20px;
+    width: 22%
+  }
+
+}
